@@ -52,7 +52,7 @@ pipeline {
                     }
                 }
             }
-        }
+        }//fd
         stage('Security scanning') {
             steps {
                   withCredentials([usernamePassword(credentialsId: 'aaltice-harbor-auth', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
